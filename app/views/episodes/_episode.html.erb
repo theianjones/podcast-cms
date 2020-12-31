@@ -1,0 +1,13 @@
+<h2>
+  <%= link_to episode.title, episode_path(episode) %>
+</h2>
+
+<p><%= episode.description %></p>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src=<%= episode.asset.url %> type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<%= link_to "Edit", edit_episode_path(episode) %>

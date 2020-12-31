@@ -1,0 +1,8 @@
+<%= form_with model: @episode do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+  <%= form.file_field :asset %>
+  <%= form.submit "Submit" %>
+<% end %>
